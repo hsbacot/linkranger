@@ -16,7 +16,7 @@
     <tbody>
     <% @links.each do |link| %>
       <tr>
-        <td><%= link_to link.address, "#" %></td>
+        <td><%= link_to link.address, url_with_protocol(link.address), :target => '_blank' %></td>
         <td><%= link.description %></td>
         <td><%= link_to 'Show', link %></td>
         <% if current_user == link.user %>
