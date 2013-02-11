@@ -12,5 +12,5 @@ class User < ActiveRecord::Base
   # linking links to user
   has_many :links
 
-  validates :user_id, presence: true
+  # validates :user_id, presence: true
 end
