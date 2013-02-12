@@ -9,8 +9,9 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :username
   # attr_accessible :title, :body
 
+  # forces a unique username
+  validates :username, :uniqueness => true
+
   # linking links to user
   has_many :links
-
-  # validates :user_id, presence: true
 end

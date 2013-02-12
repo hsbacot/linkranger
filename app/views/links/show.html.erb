@@ -2,7 +2,7 @@
 	<div class="span6 offset3">
 		<div class="well">
 			<p>
-			  <%= @link.address %>
+			  <%= link_to @link.address, url_with_protocol(@link.address), :target => '_blank' %>
 			</p>
 
 			<p>
