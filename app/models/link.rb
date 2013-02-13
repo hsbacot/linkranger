@@ -4,4 +4,5 @@ class Link < ActiveRecord::Base
   belongs_to :user
 
   validates :user_id, presence: true
+  validates :linkname, :length => { :maximum => 50 }
 end
