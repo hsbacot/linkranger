@@ -1,5 +1,5 @@
 class Link < ActiveRecord::Base
-  attr_accessible :address, :description
+  attr_accessible :address, :description, :linkname
 
   belongs_to :user
 

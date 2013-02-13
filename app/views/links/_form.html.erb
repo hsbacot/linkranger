@@ -1,8 +1,8 @@
 <%= simple_form_for(@link) do |f| %>
   <%= f.error_notification %>
-
 	  <div class="form-inputs">
-	    <%= f.input :address %>
+	    <%= f.input :address, label: 'URL address' %>
+	    <%= f.input :linkname, label: 'Title (optional)' %>
 	    <%= f.input :description, label: 'Enter a brief description of your link' %>
 	  </div>
 
