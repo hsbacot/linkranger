@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise', '2.2.2'
 gem 'simple_form'
 gem 'newrelic_rpm'
+gem 'bootstrap-will_paginate'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

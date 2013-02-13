@@ -12,7 +12,8 @@
 			<% if current_user == @link.user %>
 			<%= link_to 'Edit', edit_link_path(@link) %> |
 			<% end %>
-			<%= link_to 'Back', links_path %>
+			<%= link_to 'Back', links_path %> |
+			<%= link_to 'New', new_link_path %>
 		</div>
 	</div>
 </div>
