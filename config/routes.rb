@@ -2,10 +2,10 @@ Mylinks::Application.routes.draw do
   
   resources :links
 
-
   devise_for :users
 
-  match 'users/:id' => 'users#show'
+  # match 'users/:id' => 'users#show', as: 'user'
+  match "/user(/:id)", :controller => "user", :action => "show"
 
   root :to => 'pages#home'
   

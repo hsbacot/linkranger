@@ -1,3 +1,16 @@
-<h1>User Profile</h1>
-
-<%= @user.username %>
+<div class="row">
+	<div class="span10 offset1">
+			<div class="row">
+				<div class="span5">
+					<h1><%= @user.username %></h1>
+					<p><i><%= @user.motto %></i></p>
+				</div>
+				<div class="span5">
+					<h2>About <%= @user.username %></h2>
+					<p>
+						<%= @user.bio %>
+					</p>
+				</div>
+			</div>
+	</div>
+</div>
