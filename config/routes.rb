@@ -5,6 +5,8 @@ Mylinks::Application.routes.draw do
 
   devise_for :users
 
+  match 'users/:id' => 'users#show'
+
   root :to => 'pages#home'
   
   get "pages/home"

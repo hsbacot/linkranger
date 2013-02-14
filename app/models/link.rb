@@ -5,4 +5,5 @@ class Link < ActiveRecord::Base
 
   validates :user_id, presence: true
   validates :linkname, :length => { :maximum => 50 }
+  validates :address, uniqueness: true
 end
