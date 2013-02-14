@@ -1,15 +1,16 @@
 Mylinks::Application.routes.draw do
   
+  root :to => 'pages#home'
+
   resources :links
+  get "pages/home"
 
   devise_for :users
 
-  # match 'users/:id' => 'users#show', as: 'user'
-  match "/user(/:id)", :controller => "user", :action => "show"
+  match 'users/:id' => 'users#show', as: 'user'
+  # match "/users(/:id)", :controller => "users", :action => "show"
 
-  root :to => 'pages#home'
   
-  get "pages/home"
 
   get "about" => "pages#about"
 
