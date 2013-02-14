@@ -16,7 +16,11 @@
     <tbody>
     <% @links.each do |link| %>
       <tr>
-        <td><%= link_to link.linkname || link.address, url_with_protocol(link.address), :target => '_blank' %></td>
+        <% if link.linkname.blank? %>
+        <td><%= link_to link.address, url_with_protocol(link.address), :target => '_blank' %></td>
+        <% else %>
+        <td><%= link_to link.linkname, url_with_protocol(link.address), :target => '_blank' %></td>
+        <% end %>
         <td><%= link.description %></td>
         <td><%= link_to 'Show', link %></td>
         <% if current_user == link.user %>
