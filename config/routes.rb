@@ -7,7 +7,7 @@ Mylinks::Application.routes.draw do
 
   devise_for :users
 
-  match 'users/:id' => 'users#show', as: 'user'
+  match 'u/:id' => 'users#show', as: 'user'
   # match 'users/:username' => 'users#show', as: 'username'
 
   
