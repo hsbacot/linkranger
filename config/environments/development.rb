@@ -36,5 +36,5 @@ Mylinks::Application.configure do
   config.assets.debug = true
 
   # set for devise installation
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'linkranger.me' }
 end
